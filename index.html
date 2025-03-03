@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SkillBench</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SkillBench: A Hierarchical and Scalable Benchmark for Fine-grained
+              Compositional Text-to-Image Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <!-- <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+              </span> -->
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+              <!-- <span class="author-block"></a><sup>1</sup>University</span> -->
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Despite significant advances in text-to-image (T2I) models, current approaches still struggle to
+              effectively combine multiple concepts described by compositional textual prompts into a coherent scene.
+              Developing benchmarks to systematically analyze the compositional capabilities of T2I models is
+              challenging yet crucial.
+              Existing benchmarks either lack comprehensive coverage of compositional skills or fail to provide
+              fine-grained definitions of these skills, limiting the ability to conduct in-depth, multigranularity
+              evaluations.
+              To address these issues, we introduce \(\textbf{SkillBench}\), a hierarchical and scalable benchmark to
+              evaluate compositional T2I generation.
+              Specifically, we define compositional skills in a \(\textbf{fine-grained}\) and \(\textbf{hierarchical}\)
+              manner.
+              These skills are categorized into primitive skills and composite skills.
+              Furthermore, each skill is evaluated across varying difficulty levels to evaluate how well T2I models
+              generalize from simpler to more complex tasks.
+              Additionally, we propose \(\textbf{FITScore}\), a Fine-grained, Interpretable, and Training-free
+              evaluation framework tailored for compositional T2I generation.
+              By integrating structured analysis with interpretability, FITScore facilitates automatic and transparent
+              assessment of T2I alignment, enhancing adaptability to diverse scenarios and ensuring robust evaluation
+              performance in open-world settings.
+              Through an evaluation of nine recent large-scale T2I models, our analysis provides valuable insights into
+              the strengths and limitations of current models when addressing fine-grained compositional skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Image carousel after Abstract -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3"></h2>
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/1_failedcases.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Failure cases from a state-of-the-art text-to-image model, FLUX, in handling compositional textual
+                  prompts that involve
+                  multiple objects, diverse attributes, complex object interactions, or higher-order reasoning.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/2_prompt_collection.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  The pipeline of data collection. Prompts for composite skills are constructed by expanding those for
+                  primitive skills.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/3_evaluation.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  FITScore pipeline consists of three steps: Question List Generation, Visual Question Answering, and
+                  Alignment Scoring.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+  <!-- Prompts Dataset -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Prompts Dataset</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/4_overview.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  The detailed distribution of our SkillBench. Figure a illustrates the hierarchical structure and
+                  distribution of primitive skills
+                  across three aspects: object, attribute, and relationship. Figure b displays the hierarchical
+                  structure
+                  of
+                  composite skills. Figure c shows
+                  the distribution of difficulty levels for both primitive and composite skills.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/4_occ.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Visualizing the distributions of elements: (left) top-8 attribute occurrences and (right) top-10
+                  relationship
+                  occurrences.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/4_word_cloud_object.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  A word cloud for objects in the whole dataset.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Prompts Dataset -->
+
+
+  <!-- Evaluation -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Evaluation</h2>
+        <!-- <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths"> -->
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/5_evaluation_case_1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              The performance of FITScore when handling a highly aligned T2I example.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/5_evaluation_case_2.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              The performance of FITScore when handling a misaligned T2I example.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/5_evaluation_case_3.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              A case where corresponding QA is skipped due to missing objects. (Highlights the influence of
+              interdependencies among the questions.)
+            </h2>
+          </div>
+          <!-- </div>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Evaluation -->
+
+
+  <!-- Evaluation Result -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Evaluation Result</h2>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <img src="static/images/6_per_model.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              The performance of ten T2I models on SkillBench.
+            </h2>
+            <img src="static/images/6_per_skill.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              The performance of ten T2I models on each skill.
+            </h2>
+            <img src="static/images/6_per_level.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+              The performance of ten T2I models on each difficulty level.
+            </h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Result -->
+
+
+  <!-- Qualitative Results Comparison -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3"> Qualitative Results Comparison </h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 style="font-size: 24px;">Primitive Skills</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_0_0_attribute_binding_color_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Bidning: Color
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_0_1_attribute_binding_material_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Bidning: Material
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_0_2_attribute_binding_pattern_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Bidning: Pattern
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_0_3_attribute_binding_sentiment_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Bidning: Sentiment
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_0_4_attribute_binding_shape_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Bidning: Shape
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_1_attribute_comparison_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Attribute Comparison
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_2_object_counting_combined.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Object Counting
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_3_object_differentiation_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Object Differentiation
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_4_object_negation_combined.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Object Negation
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_5_object_universality_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Object Universality
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_6_relationship_interaction_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Relationship: Interaction
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_7_relationship_part_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Relationship: Part
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_single_combined/6_8_relationship_spatial_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  Relationship: Spatial
+                </h2>
+              </div>
+
+            </div>
+            <br><br>
+            <h2 style="font-size: 24px;">Composite Skills</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_0_cross_counting_attribute_binding_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+AB
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_1_cross_counting_interaction_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+IR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_2_cross_counting_part_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+PR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_3_cross_counting_spatial_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+SR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_4_cross_attribute_binding_interaction_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  AB+IR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_5_cross_attribute_binding_part_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  AB+PR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_6_cross_attribute_binding_spatial_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  AB+SR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_7_cross_counting_interaction_attribute_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+AB+IR
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/for_show_cross_combined/6_8_cross_attribute_binding_part_counting_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+AB+PR
+                </h2>
+              </div>
+              <div class="item">
+                <img
+                  src="static/images/for_show_cross_combined/6_9_cross_counting_attribute_binding_spatial_combined.png"
+                  alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered" style="font-size: 20px;">
+                  OC+AB+SR
+                </h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Qualitative Results Comparison -->
+
+
+
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section> -->
+  <!--End BibTex citation -->
+
+  <!-- 加一个分割线 -->
+  <hr>
+  <hr>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
